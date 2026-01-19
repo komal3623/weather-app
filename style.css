@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #1f2933, #0f172a);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.app {
+  width: 900px;
+  max-width: 100%;
+  height: 400px;
+  background: #111827;
+  border-radius: 20px;
+  display: flex;
+  padding: 30px;
+  gap: 30px;
+  box-sizing: border-box;
+}
+
+/* LEFT */
+.left {
+  flex: 1;
+}
+
+.left h2 {
+  font-size: 24px;
+  color: #9ca3af;
+}
+
+.left h1 {
+  font-size: 72px;
+  margin: 10px 0;
+}
+
+.left p {
+  font-size: 18px;
+  color: #facc15;
+}
+
+.details {
+  margin-top: 30px;
+  display: flex;
+  gap: 30px;
+}
+
+.details div span {
+  font-size: 14px;
+  color: #9ca3af;
+}
+
+.details div strong {
+  display: block;
+  font-size: 18px;
+}
+
+/* RIGHT */
+.right {
+  flex: 1;
+  background: #020617;
+  border-radius: 16px;
+  padding: 20px;
+  overflow-x: auto;
+}
+
+.right h3 {
+  margin-bottom: 20px;
+  color: #e5e7eb;
+}
+
+.forecast {
+  display: flex;
+  justify-content: flex-start;
+  gap: 15px;
+}
+
+.day {
+  background: #111827;
+  border-radius: 12px;
+  padding: 15px;
+  text-align: center;
+  width: 80px;
+  flex-shrink: 0;
+}
+
+.day span {
+  display: block;
+  color: #9ca3af;
+  margin-bottom: 10px;
+}
+
+.day img {
+  width: 40px;
+  height: 40px;
+}
+
+.day strong {
+  display: block;
+  margin-top: 10px;
+}

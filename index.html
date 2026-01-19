@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Weather Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="app">
+  <!-- LEFT PANEL -->
+  <div class="left">
+    <form id="weatherForm" style="margin-bottom: 20px;">
+      <input
+        type="text"
+        id="cityInput"
+        placeholder="Enter city name"
+        autocomplete="off"
+        style="width: 100%; padding: 10px; font-size: 16px; border-radius: 8px; border: none;"
+        required
+      />
+    </form>
+
+    <h2 id="city">Madrid</h2>
+    <h1 id="temp">31°</h1>
+    <p id="condition">Sunny</p>
+
+    <div class="details">
+      <div>
+        <span>Wind</span>
+        <strong id="wind">10 km/h</strong>
+      </div>
+      <div>
+        <span>Humidity</span>
+        <strong id="humidity">40%</strong>
+      </div>
+      <div>
+        <span>Pressure</span>
+        <strong id="pressure">1012 hPa</strong>
+      </div>
+    </div>
+  </div>
+
+  <!-- RIGHT PANEL -->
+  <div class="right">
+    <h3>Weekly Forecast</h3>
+
+    <div class="forecast"></div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
+
