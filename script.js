@@ -6,7 +6,7 @@ form.addEventListener("submit", getData);
 
 // On page load, fetch default city weather (Madrid)
 window.addEventListener("DOMContentLoaded", () => {
-  fetchWeather("Madrid");
+  fetchWeather("Hyderabad");
 });
 
 async function getData(e) {
@@ -75,3 +75,4 @@ function renderDashboard(data) {
     forecastEl.insertAdjacentHTML("beforeend", dayHtml);
   });
 }
+
