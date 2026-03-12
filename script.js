@@ -4,7 +4,7 @@ const cityInput = document.getElementById("cityInput");
 
 form.addEventListener("submit", getData);
 
-// On page load, fetch default city weather (Madrid)
+// On page load, fetch default city weather (Hyderabad)
 window.addEventListener("DOMContentLoaded", () => {
   fetchWeather("Hyderabad");
 });
@@ -75,6 +75,7 @@ function renderDashboard(data) {
     forecastEl.insertAdjacentHTML("beforeend", dayHtml);
   });
 }
+
 
 
 
