@@ -1,4 +1,4 @@
-const API_KEY = "REPLACE WITH YOUR OWN API KEY";
+const API_KEY = "57f4f93a22d0448c980123252261901";//REPLACE WITH YOUR OWN API KEY
 const form = document.getElementById("weatherForm");
 const cityInput = document.getElementById("cityInput");
 
@@ -75,5 +75,6 @@ function renderDashboard(data) {
     forecastEl.insertAdjacentHTML("beforeend", dayHtml);
   });
 }
+
 
 
